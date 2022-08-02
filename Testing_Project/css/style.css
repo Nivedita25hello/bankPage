@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300i,400,600,700,800');
+@import url(../icons/font-awesome/css/font-awesome.min.css);
+@import url(../icons/themify-icons/themify-icons.css);
+
+html{
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  line-height: 1.5;
+  background: #f7f7f7;
+  color: #333;
+ 
+}
+h4{
+  color: #000;
+}
+body {
+  background: #fff;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  color: #67757c;
+}
+.bankingWrapperHeader {
+  z-index: 50;
+  background: #fff;
+  box-shadow: 1px 0 5px rgb(0 0 0 / 10%);
+  position: fixed;
+  top:0;
+  width: 100%;
+}
+.bankingWrapperHeader .navBar .navbarHeader  {
+  text-align: center;
+ 
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-left: 40px;
+}
+
+.bankingWrapper{
+  width: 100%;
+  display: inline-block;
+
+}
+.navbarcollapse{
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+}
+.navbarOne , .navBarTwo{
+  display: inline-block;
+  line-height: 6px;
+}
+.navbarOne{
+  background: #000;
+  padding:15px 0
+}
+.navBar{
+  display: flex;
+  background: #000;
+  color: #fff;
+}
+.navbarOne ul , .navBarTwo ul{
+  display: flex;
+  list-style: none;
+  float: right;
+}
+.bankList{
+  font-size: 14px;
+  color: #fff;
+  line-height: 22px;
+  margin-right: 22px;
+
+}
+.navBarTwo li{
+  font-size: 14px;
+  color: #fff;
+  line-height: 6px;
+  margin-right: 18px;
+  cursor: pointer;
+
+}
+.navBarTwo li:hover{
+  color:#be0d00;
+  text-decoration:underline
+}
+.navBarTwo li:last-child:hover{
+  text-decoration: none;
+}
+.navbar-brand{
+    font-size: 29px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.bankingWrapperBody{
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.leftBarMenu {
+  position: fixed;
+  width: 150px;
+  height: 100%;
+  top: 0;
+  z-index: 20;
+  padding-top:55px;
+  background: #fff;
+  -webkit-box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
+}
+.sideBar{
+   position:relative
+}
+.sideBarOptions{
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+.sideBarText{
+    font-size: 13px;
+    color: #333;
+}
+.rightSideDiv{
+  display: inline-block;
+  width: calc(100% - 150px);
+  margin-left: 150px;
+  background: #fafafa;
+
+}
+.ti-search{
+
+}
+.ApplyNowBtn{
+  background: #62d1f3;
+  border: 1px solid #62d1f3;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(239, 83, 80, 0.14), 0 3px 1px -2px rgba(239, 83, 80, 0.2), 0 1px 5px 0 rgba(239, 83, 80, 0.12);
+  box-shadow: 0 2px 2px 0 rgba(239, 83, 80, 0.14), 0 3px 1px -2px rgba(239, 83, 80, 0.2), 0 1px 5px 0 rgba(239, 83, 80, 0.12);
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+ color: #fff;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.housinngLoanText{
+  font-size: 26px;
+  font-weight: 600;
+  display: inherit;
+  margin-top: 10px;
+  color: #333;
+}
+.housinngLoanText p{
+  margin: 0;
+  font-size: 18px;
+  color: #666;
+  line-height: 65px;
+  font-weight: initial;
+}
+.housingLoanTabOptions .sideBarOptions{
+   display: flex;
+   flex-direction: column;
+   border-bottom: none;
+   padding: 15px 30px;
+}
+.housingLoanTabOptions{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom:1px solid #c7c7c7;
+  box-shadow: 0 0 4px 0 grey;
+  background: #fff;
+}
+.housingLoanMainDiv{
+  padding: 112px 150px 30px 150px;
+  border-bottom: 1px solid #d7d7d7;
+}
+.housingLoanPromotionalDiv{
+  padding: 50px 150px;
+}
+.card{
+  background: #ffffff none repeat scroll 0 0;
+    margin: 15px 0;
+    padding: 20px;
+    border: 0 solid #e7e7e7;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 0 grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.promotionalCampaignDiv{
+  display: flex;
+}
+.learnMoreBtn{
+  background-color: #be0d00;
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 3px;
+  font-weight: 200;
+  font-family: 'Open Sans';
+  border: 1px solid #be0d00;
+  margin-top:30px;
+  cursor:pointer;
+}
+.learnMoreBtn:hover{
+  opacity:0.8
+}
+.promotionalCampaignDiv .firstDiv{
+  width:70%;
+  margin-right: 20px;
+}
+.promotionalCampaignDiv .secondDiv{
+  width:30%;
+}
+.bankingFriendsDiv h4{
+  text-align: center;
+}
+.sponsershipMainDiv , .sponserSubDiv{
+  display: flex;
+}
+.sponserSubDiv .card{
+  margin:0;
+
+}
+.sponsershipFrstDiv{
+  width:70%;
+  margin-right: 20px;
+}
+.sponsershipsecndDiv{
+  width:30%;
+}
+.sponserSubDiv div{
+  width:50%;
+}
+.sponserSubDiv .card:first-child{
+  margin-right: 20px;
+}
+.sponsershipFrstDiv .card{
+  
+}
+.siteMapContentDiv{
+  display: flex
+  
+}
+.bankList
+.siteMapDiv{
+  width: auto;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+    color: #666;
+}
+.siteMapDiv:hover{
+  opacity: 0.9;
+}
+.hidden{
+  display: none;
+}
+.rotate{
+  transform: rotate(180deg);
+}
+.siteMapSubDiv{
+  width: 25%;
+}
+.siteMapSubDiv ul{
+   list-style: none;
+   padding: 0;
+   color: #333;
+   font-size: 14px;
+}
+.footer {
+  display: flex;
+  background: #ffffff none repeat scroll 0 0;
+  border-top: 1px solid rgba(120, 130, 140, 0.13);
+  color: #fff;
+  left: 150px;
+  padding: 17px 150px;
+  position: absolute;
+  right: 0;
+  font-size: 14px;
+  background: #000;
+}
+.sIcons .fa{
+  color: #fff;
+  font-size: 20px;
+}
+.footer h4{
+  color: #fff;
+}
+.sIcons{
+  margin-right: 15px;
+}
+.privacyContent{
+  display: flex;
+  
+}
+.ptext{
+  border-right: 1px solid #ccc;
+  padding: 0 10px;
+  font-size: 13px;
+}
+.privacyContent{
+   margin: 30px 0 0 -10px
+}
+.footerContent{
+  margin-top: 20px;
+  font-size: 14px;
+}
+.input, .textarea{
+  border: 1px solid #d7d7d7;
+  height: 30px;
+  margin-bottom: 10px;
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  padding: 0 5px;
+
+}
+.textarea{
+  height: 50px;
+}
+.fa{
+  color: #be0d00;
+  font-size: 20px;
+}
+.fa.fa-bars{
+  color: #fff;
+}
+.fa.fa-bars:hover{
+  color: #be0d00;
+}
+.fa.fa-lock{
+  color: #fff;
+}
+.fa.fa-lock:hover{
+  color: #be0d00;
+  cursor: pointer;
+  
+}
+.bankList:hover{
+  color: #be0d00;
+}
+.bankList span:hover{
+  color: #be0d00;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.sideBarOptions.borderHighlight{
+  border-bottom: 2px solid #be0d00;
+}
+.searchIcon{
+  cursor: pointer;
+  margin-top: -3px;
+  margin-left: 0px;
+}
+.ti-search {
+  font-size: 18px;
+}
+.app-search{
+  position: absolute;
+  margin: 0;
+  z-index: 110;
+  width: 100%;
+  top: -1px;
+  -webkit-box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  display: none;
+  left: 0;
+  padding: 27px 20px;
+  background: #fff;
+}
+.app-search input {
+  width: 92%;
+  border-radius: 0;
+  font-size: 14px;
+  -webkit-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  border: none;
+  float: left;
+}
+.search-box .app-search input:focus {
+  border-color: #ffffff;
+}
+.srh-btn{
+  float: right;
+}
+.fa.fa-angle-down{
+  color: #be0d00;
+  font-size: 25px;
+  margin-left: 5px;
+}
+.siteMapDiv{
+  width: auto;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.backToTopDiv{
+  height: 60px;
+  width: 60px;
+  -webkit-box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+  background: #be0d00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.backToTopDiv:hover{
+  opacity:0.8
+}
+.backToTopDiv .fa{
+  color: #fff;
+  font-size: 25px;
+}
+.ti-close{
+  color:#be0d00
+}
+.menuBar{
+  display: none;
+}
+.slider {
+  margin: 10px 0;
+  width: 580px; /* Update to your slider width */
+  height: 250px; /* Update to your slider height */
+  position: relative;
+  overflow: hidden;
+}
+
+.slider li {
+  display: none;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+}
+.item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item span{
+  text-align: center;
+}
+.closeIconNew {
+  display: none;
+}
+
+
+
+
+
+/*--------------------------------media queries-----------------------------*/
+
+@media (min-width: 768px) and (max-width : 1024px) {
+  .housingLoanPromotionalDiv {
+    padding: 50px 15px;
+}
+.sponsershipFrstDiv {
+  width: 100%;
+}
+.sponsershipMainDiv {
+  display: inline-block;
+}
+.sponserSubDiv {
+  display: flex;
+}
+.sponsershipsecndDiv{
+  width: 100%;
+}
+.housingLoanMainDiv {
+  padding: 90px 15px;
+}
+.footer{
+  padding: 17px 68px;
+}
+.leftBarMenu{
+  top: 48px;
+}
+}
+@media (min-width: 320px) and (max-width :400px) {
+  .promotionalCampaignDiv .firstDiv {
+    display: inline-block;
+    width: 100%;
+}
+.promotionalCampaignDiv, .housingLoanPromotionalDiv {
+  width: 100%;
+}
+.navBarTwo li{
+  line-height: 22px;
+}
+.leftBarMenu{
+  top:135px!important;
+}
+.housingLoanMainDiv {
+  padding: 194px 30px 15px!important;
+}
+}
+@media (max-width: 767px) {
+  .siteMapContentDiv{
+    display: inline-block;
+  }
+  .siteMapContentDiv.hidden{
+    display: none;
+  }
+  .siteMapSubDiv{
+    width:100%
+  }
+  .fa.fa-lock{
+    display: none;
+  }
+  .closeIconNew{
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 21px;
+
+  }
+  .bankList {
+    line-height: 18px;
+  }
+  .housingLoanTabOptions .sideBarOptions{
+    float: left;
+  }
+  .menuBar{
+    display: block;
+    cursor: pointer;
+  }
+  .BankingDashboard{
+    display: inline-block;
+  }
+  .housingLoanTabOptions{
+    display: inline-block;
+  }
+  .navBar{
+    display: inline-block;
+    width: 100%;
+  }
+  .bankingWrapperHeader .navBar .navbarHeader  {
+    width: 100%;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar-collapse{
+    width: 100%;
+    display: inline-block;
+  }
+  .bankingWrapperBody{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+  }
+  .leftBarMenu{
+    display: none;
+  }
+  .rightSideDiv{
+    width:100%;
+    margin-left: 0;
+  }
+  .housingLoanPromotionalDiv {
+    padding: 50px 20px;
+}
+.promotionalCampaignDiv .firstDiv {
+  display: inline-block;
+  width: 100%;
+}
+.promotionalCampaignDiv .secondDiv{
+  width: 100%;
+}
+.sponsershipMainDiv, .sponserSubDiv{
+  display: inline-block;
+  width:100%;
+}
+.footer{
+  display: inline-block;
+  padding: 15px 20px;
+  left: 0;
+  position: initial;
+}
+.getIntouchFormDiv{
+  display: inline-block;
+}
+.promotionalCampaignDiv{
+  display: inline-block;
+}
+.navbarOne, .navBarTwo{
+  width: 100%;
+}
+.sponsershipFrstDiv {
+  width: 100%;
+  margin-right: 20px;
+}
+.sponserSubDiv .card:first-child{
+  margin-bottom: 10px;
+  margin-right: 0;
+}
+.sponserSubDiv div{
+  width:100%;
+}
+.sponsershipsecndDiv {
+  width: 100%;
+}
+.housingLoanMainDiv {
+  padding: 155px 30px 15px;
+}
+
+}
+
+
